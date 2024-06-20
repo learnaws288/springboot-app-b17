@@ -19,5 +19,11 @@ pipeline {
       }
     }
 
+    stage('clone') {
+      steps {
+        git(url: 'https://github.com/learnaws288/springboot-app-b17.git', branch: 'main')
+      }
+    }
+
   }
 }
